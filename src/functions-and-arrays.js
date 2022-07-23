@@ -35,11 +35,15 @@ function findLongestWord(words) {
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
 function sumNumbers(numbers) {
-  for (let sum = 0, i = 0; i < numbers.length; i++) {
-    sum += numbers[i];
+  let totalSum = 0;
+  if (numbers.length === 0) {
+    return 0;
   }
-  return numbers.length;
+  for (const result in numbers) {
+    totalSum += numbers[result];
   }
+  return totalSum;
+}
 
 
 
