@@ -3,11 +3,8 @@ function maxOfTwoNumbers(number1, number2) {
   if (number1 > number2) {
     return number1;
   }
-  if (number1 < number2) {
+  else (number1 < number2) {
     return number2;
-  }
-  else {
-    return number1;
   }
 }
 
@@ -93,7 +90,7 @@ const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smar
 function averageWordLength(wordsArr) { 
   var total = 0;
   for (const item of wordsArr) {
-    total += wordsArr.length
+    total += wordsArr.length;
   }
   var average = total/wordsArr.length;
   return average;
